@@ -1,4 +1,6 @@
-public class ProtoCalculator implements CalculatorIF {
+package calculator;
+
+public class CalculatorPrototype implements CalculatorIF {
     @Override
     public int divide(int m, int n) {
         int division = 0;
@@ -9,7 +11,7 @@ public class ProtoCalculator implements CalculatorIF {
 
         while (m >= n) {
             m = m - n;
-            division = division + 1;
+            division += 1;
         }
 
         //if (m != 0) {
@@ -20,7 +22,7 @@ public class ProtoCalculator implements CalculatorIF {
     }
 
     @Override
-    public int multiplication(int m, int n) {
+    public int multiply(int m, int n) {
         for (int i = 0; i < n; i++) {
             m = m + n;
         }
