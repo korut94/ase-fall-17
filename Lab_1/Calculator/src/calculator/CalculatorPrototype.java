@@ -1,3 +1,5 @@
+package calculator;
+
 public class CalculatorPrototype implements CalculatorIF {
     @Override
     public int divide(int m, int n) {
