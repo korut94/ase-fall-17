@@ -14,10 +14,6 @@ public class CalculatorPrototype implements CalculatorIF {
             division += 1;
         }
 
-        //if (m != 0) {
-        //    division -= 1;
-        //}
-
         return division;
     }
 

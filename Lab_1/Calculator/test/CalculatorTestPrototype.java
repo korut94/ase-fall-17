@@ -22,7 +22,7 @@ public class CalculatorTestPrototype {
     public void testDivisionOdd() {
         CalculatorPrototype calculator = new CalculatorPrototype();
         int sum = calculator.divide(7,3);
-        assertEquals(1, sum);
+        assertEquals(2, sum);
     }
 
     @Test(expected = ArithmeticException.class)
