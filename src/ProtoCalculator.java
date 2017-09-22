@@ -3,14 +3,18 @@ public class ProtoCalculator implements CalculatorIF {
     public int divide(int m, int n) {
         int division = 0;
 
-        while (m > n) {
+        if (n == 0) {
+            throw new ArithmeticException();
+        }
+
+        while (m >= n) {
             m = m - n;
             division = division + 1;
         }
 
-        if (m != 0) {
-            division -= 1;
-        }
+        //if (m != 0) {
+        //    division -= 1;
+        //}
 
         return division;
     }
