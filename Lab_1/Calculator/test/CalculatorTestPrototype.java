@@ -14,15 +14,15 @@ public class CalculatorTestPrototype {
     @Test
     public void testDivisionEven() {
         CalculatorPrototype calculator = new CalculatorPrototype();
-        int sum = calculator.divide(6,3);
-        assertEquals(2, sum);
+        int division = calculator.divide(6,3);
+        assertEquals(2, division);
     }
 
     @Test
     public void testDivisionOdd() {
         CalculatorPrototype calculator = new CalculatorPrototype();
-        int sum = calculator.divide(7,3);
-        assertEquals(2, sum);
+        int division = calculator.divide(7,3);
+        assertEquals(2, division);
     }
 
     @Test(expected = ArithmeticException.class)
