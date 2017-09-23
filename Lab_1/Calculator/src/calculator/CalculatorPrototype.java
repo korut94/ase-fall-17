@@ -5,13 +5,13 @@ public class CalculatorPrototype implements CalculatorIF {
     public int divide(int m, int n) {
         int division = 0;
 
-        while (m > n) {
-            m = m - n;
-            division += 1;
+        if (n == 0) {
+            throw new ArithmeticException();
         }
 
-        if (m != 0) {
-            division -= 1;
+        while (m >= n) {
+            m = m - n;
+            division += 1;
         }
 
         return division;
