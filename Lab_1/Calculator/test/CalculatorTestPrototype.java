@@ -28,6 +28,6 @@ public class CalculatorTestPrototype {
     @Test(expected = ArithmeticException.class)
     public void testDivisionByZero() {
         CalculatorPrototype calculator = new CalculatorPrototype();
-        int sum = calculator.divide(3,0);
+        int division = calculator.divide(3,0);
     }
 }
